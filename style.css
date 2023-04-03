@@ -300,7 +300,7 @@ nav a:hover svg {
     color: var(--accent);
 }
 
-.container {
+.mini-container {
     clear: both;           
     background-color: var(--background);
 }
