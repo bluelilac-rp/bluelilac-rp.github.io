@@ -56,9 +56,9 @@
             <div class="content-wrap">
 
                 <div id="mini-tab" class="upper">
-                    <li><a id="mini-tab1">tab</a></li>
-                    <li><a id="mini-tab2">tab two</a></li>
-                </div>
+                    <li><a id="mini-tab1">premise</a></li>
+                    <li><a id="mini-tab2">world</a></li>
+                </div><br>
 
                 <div class="mini-container" id="mini-tab1C">
                     <div class="main-content summary">
@@ -101,9 +101,14 @@
                         <a href="/">notion</a>
                     </div>
                 </div>
+                
 
                 <div class="mini-container" id="mini-tab2C">
-                    content here
+                    <div class="main-content summary">
+                        <div class="subtitle">tab 2 content</div>
+                        <p>tab 2 copy</p>
+
+                        </div>
                 </div>
                 
             </div>
@@ -174,7 +179,7 @@
             $('#tabs li a').addClass('inactive');           
             $(this).removeClass('inactive');
             
-            $('.container').hide();
+            $('.mini-container').hide();
             $('#'+ t + 'C').fadeIn('slow');
             }
             window.scrollTo(0, 0);
@@ -186,16 +191,16 @@
         $(document).ready(function() {  
 
         $('#mini-tab li a:not(:first)').addClass('inactive');
-        $('.container').hide();
-        $('.container:first').show();
+        $('.mini-container').hide();
+        $('.mini-container:first').show();
             
-        $('minitab li a').click(function(){
+        $('#mini-tab li a').click(function(){
             var t = $(this).attr('id');
           if($(this).hasClass('inactive')){ 
             $('#mini-tab li a').addClass('inactive');           
             $(this).removeClass('inactive');
             
-            $('.container').hide();
+            $('.mini-container').hide();
             $('#'+ t + 'C').fadeIn('slow');
             }
             window.scrollTo(0, 0);
