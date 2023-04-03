@@ -29,7 +29,7 @@
 
         <div id="tabs" class="upper">
 
-            <li><a id="tab1">world & premise</a></li>
+            <li><a id="tab1">premise & world</a></li>
             <li><a id="tab2">tab two</a></li>
             
         </div>
@@ -57,7 +57,12 @@
 
                 <div id="mini-tab" class="upper">
                     <li><a id="mini-tab1">premise</a></li>
-                    <li><a id="mini-tab2">world</a></li>
+                    <li><a id="mini-tab2">overview</a></li>
+                    <li><a id="mini-tab3">the garden</a></li>
+                    <li><a id="mini-tab4">exorcists & demons</a></li>
+                    <li><a id="mini-tab5">otherside & outsiders</a></li>
+                    <li><a id="mini-tab6">assignments</a></li>
+                    <li><a id="mini-tab7">FAQ</a></li>
                 </div><br>
 
                 <div class="mini-container" id="mini-tab1C">
@@ -106,9 +111,10 @@
                 <div class="mini-container" id="mini-tab2C">
                     <div class="main-content summary">
                         <div class="subtitle">tab 2 content</div>
-                        <p>tab 2 copy</p>
+                        
 
-                        </div>
+                    </div>
+                    
                 </div>
                 
             </div>
@@ -133,9 +139,18 @@
             </div>
 
             <div class="content-wrap">
-                <div class="main-content summary">
-                    <div class="subtitle">summary</div>          
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>            
+                
+                <div id="mini-tab" class="upper">
+                    <li><a id="mini-tab8">one</a></li>
+                    <li><a id="mini-tab9">smth</a></li>
+                    <li><a id="mini-tab10">gisdj garden</a></li>
+                </div><br>
+
+                <div class="mini-container" id="mini-tab8C">
+                    <div class="main-content summary">
+                        <div class="subtitle">summary</div>          
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>            
+                    </div>
                 </div>
         </div>
         <!-- end tab 2 -->
@@ -179,7 +194,7 @@
             $('#tabs li a').addClass('inactive');           
             $(this).removeClass('inactive');
             
-            $('.mini-container').hide();
+            $('.container').hide();
             $('#'+ t + 'C').fadeIn('slow');
             }
             window.scrollTo(0, 0);
