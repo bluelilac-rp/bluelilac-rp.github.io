@@ -305,6 +305,7 @@ nav a:hover svg {
     background-color: var(--background);
 }
 
+#mini-tab li a, #mini-tab li a.inactive {border-bottom: none !important;}
 /*----- COVER -----*/
 
 .cover-wrap {
