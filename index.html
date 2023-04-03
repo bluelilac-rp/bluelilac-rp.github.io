@@ -140,13 +140,20 @@
 
             <div class="content-wrap">
                 
-                <div id="mini-tab" class="upper">
-                    <li><a id="mini-tab8">one</a></li>
-                    <li><a id="mini-tab9">smth</a></li>
-                    <li><a id="mini-tab10">gisdj garden</a></li>
+                <div id="mini-tabb" class="upper">
+                    <li><a id="mini-tabb1">one</a></li>
+                    <li><a id="mini-tabb2">smth</a></li>
+                    <li><a id="mini-tabb3">gisdj garden</a></li>
                 </div><br>
 
-                <div class="mini-container" id="mini-tab8C">
+                <div class="mini-containerb" id="mini-tabb1C">
+                    <div class="main-content summary">
+                        <div class="subtitle">summary</div>          
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>            
+                    </div>
+                </div>
+
+                <div class="mini-containerb" id="mini-tabb2C">
                     <div class="main-content summary">
                         <div class="subtitle">summary</div>          
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>            
@@ -182,6 +189,7 @@
             },
           });
           
+        /// MAIN TABS
         $(document).ready(function() {    
         
         $('#tabs li a:not(:first)').addClass('inactive');
@@ -203,6 +211,8 @@
         
         feather.replace()
 
+        /// MINI TABS 1
+
         $(document).ready(function() {  
 
         $('#mini-tab li a:not(:first)').addClass('inactive');
@@ -222,6 +232,29 @@
             });
         });
     
+        feather.replace()
+
+         /// MINI TABS 2
+
+         $(document).ready(function() {  
+
+        $('#mini-tabb li a:not(:first)').addClass('inactive');
+        $('.mini-containerb').hide();
+        $('.mini-containerb:first').show();
+    
+        $('#mini-tabb li a').click(function(){
+            var t = $(this).attr('id');
+        if($(this).hasClass('inactive')){ 
+            $('#mini-tabb li a').addClass('inactive');           
+            $(this).removeClass('inactive');
+            
+            $('.mini-containerb').hide();
+            $('#'+ t + 'C').fadeIn('slow');
+            }
+            window.scrollTo(0, 0);
+            });
+        });
+
         feather.replace()
         
         </script>

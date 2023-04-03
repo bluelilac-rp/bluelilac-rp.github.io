@@ -269,7 +269,7 @@ nav a:hover svg {
     background-color: var(--background);
 }
 
-/*----- MINI-TABS -----*/
+/*----- MINI-TABS 1 -----*/
 
 #mini-tab {
     margin: 1em 0 0 0;
@@ -306,6 +306,44 @@ nav a:hover svg {
 }
 
 #mini-tab li a, #mini-tab li a.inactive {border-bottom: none !important;}
+
+/*----- MINI-TABS 2 -----*/
+
+#mini-tabb {
+    margin: 1em 0 0 0;
+    padding-bottom: 1.5em;
+}
+
+#mini-tabb li {
+    display: inline-block; 
+    list-style-type: none; 
+    outline: none;
+}
+
+#mini-tabb li a {
+   color: var(--accent);
+   font-weight: bold;
+   margin: 0 1.5em 0 0;
+   border-bottom: 2px solid var(--accent);
+   padding-bottom: calc(2px + 1.5em);
+}
+
+#mini-tabb li a.inactive {
+    color: var(--header-links);
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+}
+
+#mini-tabb li a:hover, #mini-tabb li a.inactive:hover {
+    color: var(--accent);
+}
+
+.mini-containerb {
+    clear: both;           
+    background-color: var(--background);
+}
+
+#mini-tabb li a, #mini-tabb li a.inactive {border-bottom: none !important;}
 /*----- COVER -----*/
 
 .cover-wrap {
