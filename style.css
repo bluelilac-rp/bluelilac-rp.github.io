@@ -110,7 +110,7 @@ h5 {font-size: 0.9em;}
 
 small {font-size: 0.9em;}
 big {font-size: 1.1em;}
-b, bold, strong {color: var(--title);}
+b, bold, strong {}
 
 ul {list-style-type: circle;}
 ol {list-style-type: decimal;}
