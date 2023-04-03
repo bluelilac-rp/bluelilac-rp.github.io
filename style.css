@@ -555,5 +555,6 @@ footer nav a {margin: 0 1em;}
     .main-content:last-of-type {padding-bottom: 6em;}
     
     #tabs li a, #tabs li a.inactive {border-bottom: none;}
+    #mini-tab li a, #mini-tab li a.inactive {border-bottom: none;}
 }
 
