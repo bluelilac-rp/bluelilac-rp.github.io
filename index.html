@@ -55,12 +55,12 @@
 
             <div class="content-wrap">
 
-                <div id="tabs" class="upper">
+                <div id="mini-tab" class="upper">
                     <li><a id="mini-tab1">tab</a></li>
                     <li><a id="mini-tab2">tab two</a></li>
                 </div>
 
-                <div class="container" id="mini-tab1">
+                <div class="container" id="mini-tab1C">
                     <div class="main-content summary">
                         <div class="subtitle">at the turn of the century,</div>
                         <p>On ▇▇ ▇, 20▇▇, there was an noted to be an atmospheric shift in ▇ ▇▇, CA indicating a Category 3 Hurricane 
@@ -102,7 +102,7 @@
                     </div>
                 </div>
 
-                <div class="container" id="mini-tab2">
+                <div class="container" id="mini-tab2C">
                     content here
                 </div>
                 
@@ -181,6 +181,27 @@
             });
         });
         
+        feather.replace()
+
+        $(document).ready(function() {  
+
+        $('#mini-tab li a:not(:first)').addClass('inactive');
+        $('.container').hide();
+        $('.container:first').show();
+            
+        $('minitab li a').click(function(){
+            var t = $(this).attr('id');
+          if($(this).hasClass('inactive')){ 
+            $('#mini-tab li a').addClass('inactive');           
+            $(this).removeClass('inactive');
+            
+            $('.container').hide();
+            $('#'+ t + 'C').fadeIn('slow');
+            }
+            window.scrollTo(0, 0);
+            });
+        });
+    
         feather.replace()
         
         </script>

@@ -269,6 +269,42 @@ nav a:hover svg {
     background-color: var(--background);
 }
 
+/*----- MINI-TABS -----*/
+
+#mini-tab {
+    margin: 1em 0 0 0;
+    padding-bottom: 1.5em;
+}
+
+#mini-tab li {
+    display: inline-block; 
+    list-style-type: none; 
+    outline: none;
+}
+
+#mini-tab li a {
+   color: var(--accent);
+   font-weight: bold;
+   margin: 0 1.5em 0 0;
+   border-bottom: 2px solid var(--accent);
+   padding-bottom: calc(2px + 1.5em);
+}
+
+#mini-tab li a.inactive {
+    color: var(--header-links);
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+}
+
+#mini-tab li a:hover, #mini-tab li a.inactive:hover {
+    color: var(--accent);
+}
+
+.container {
+    clear: both;           
+    background-color: var(--background);
+}
+
 /*----- COVER -----*/
 
 .cover-wrap {
