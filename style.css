@@ -296,7 +296,7 @@ nav a:hover svg {
     overflow: hidden;
 }
 
-.wip-box {
+.cover-content {
     flex: initial;
     background-color: var(--title);
     color: var(--background);
@@ -308,7 +308,7 @@ nav a:hover svg {
     position: absolute;
 }
 
-.wip-box .title {color: var(--background);}
+.cover-content .title {color: var(--background);}
 .genre {font-style: italic; margin-top: 0.5em;}
 
 /*----- WIP CONTENT -----*/
@@ -487,12 +487,12 @@ footer nav a {margin: 0 1em;}
 
 @media only screen and (max-width: 1100px) {
     .cover, .cover img {width: 300px; height: 450px;}
-    .wip-box {width: 200px;}
+    .cover-content {width: 200px;}
 }
 
 @media only screen and (max-height: 767px) {
     .cover, .cover img {width: 300px; height: 450px;}
-    .wip-box {width: 200px;}
+    .cover-content {width: 200px;}
 }
 
 @media only screen and (max-width: 1024px) and (min-width: 801px) {
