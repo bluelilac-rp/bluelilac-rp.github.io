@@ -130,19 +130,16 @@ ol {list-style-type: decimal;}
    min-width: 24px;
 }
 
-.tmblr-iframe-compact .tmblr-iframe--unified-controls {
-    display: none;
-}
-
 .tippy-tooltip.custom-theme {
     background-color: var(--background);
     color: var(--title);
-    text-align: center;
+    text-align: left;
     font-family: var(--body-font);
     font-weight: normal;
-    text-transform: uppercase;
+    text-transform: lowercase;
     letter-spacing: 1px;
     border-radius: 0;
+    width:250px;
     font-style: normal;
     padding: 0.25em 0.5em;
     margin: 15px auto auto 10px;
