@@ -344,6 +344,45 @@ nav a:hover svg {
 }
 
 #mini-tabb li a, #mini-tabb li a.inactive {border-bottom: none !important;}
+
+/*----- MINI-TABS 3 -----*/
+
+#mini-tabc {
+    margin: 1em 0 0 0;
+    padding-bottom: 1.5em;
+}
+
+#mini-tabc li {
+    display: inline-block; 
+    list-style-type: none; 
+    outline: none;
+}
+
+#mini-tabc li a {
+   color: var(--accent);
+   font-weight: bold;
+   margin: 0 1.5em 0 0;
+   border-bottom: 2px solid var(--accent);
+   padding-bottom: calc(2px + 1.5em);
+}
+
+#mini-tabc li a.inactive {
+    color: var(--header-links);
+    font-weight: normal;
+    border-bottom: 2px solid transparent;
+}
+
+#mini-tabc li a:hover, #mini-tabc li a.inactive:hover {
+    color: var(--accent);
+}
+
+.mini-containerc {
+    clear: both;           
+    background-color: var(--background);
+}
+
+#mini-tabc li a, #mini-tabc li a.inactive {border-bottom: none !important;}
+
 /*----- COVER -----*/
 
 .cover-wrap {
