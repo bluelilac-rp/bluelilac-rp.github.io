@@ -157,7 +157,7 @@ ol {list-style-type: decimal;}
     line-height: 140%;
 }
 
-.title::first-letter, .subtitle::first-letter {color: var(--accent);}
+/* .title::first-letter, .subtitle::first-letter {color: var(--accent);} */
 
 .subtitle {
     font-family: var(--title-font);
