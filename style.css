@@ -168,6 +168,15 @@ ol {list-style-type: decimal;}
     margin-bottom: 1.5em;
     line-height: 140%;
 }
+.subtitle2 {
+    font-family: var(--title-font);
+    color: var(--title);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.3em;
+    margin-bottom: 1.5em;
+    line-height: 140%;
+}
 
 .upper, #stats b {
     text-transform: uppercase;
