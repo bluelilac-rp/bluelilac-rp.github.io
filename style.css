@@ -12,6 +12,7 @@
     --accent3: #cdac40;
     --title: #212121;
     --borders: #e0e0e0;
+    --borderfill: #f5f5f5;
     --header-background: #212121;
     --header-text: #fafafa;
     --header-links: #919191;
@@ -115,6 +116,16 @@ b, bold, strong {}
 
 ul {list-style-type: circle;}
 ol {list-style-type: decimal;}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid var(--borders);
+    padding:10px;
+}
+
+th {
+    background-color: var(--borderfill);
+}
 
 ::-webkit-scrollbar {
     width: 17px; 
