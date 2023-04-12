@@ -125,6 +125,7 @@ table, th, td {
 
 th {
     background-color: var(--borderfill);
+    font-weight:bold;
 }
 
 ::-webkit-scrollbar {
