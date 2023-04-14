@@ -451,12 +451,6 @@ nav a:hover svg {
 .cover-content .title {color: var(--background);}
 .genre {font-style: italic; margin-top: 0.5em;}
 
-/*----- COVER ELEMENTS ------*/
-
-.element1 img {
-    max-width: 100px;
-}
-
 /*----- WIP CONTENT -----*/
 
 .content-wrap {
